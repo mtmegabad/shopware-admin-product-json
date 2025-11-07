@@ -1,0 +1,16 @@
+{
+  "name": "shopware-json-inspect-bookmarklet",
+  "version": "1.0.0",
+  "main": "source.js",
+  "type": "module",
+  "scripts": {
+    "build": "node build.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "terser": "^5.44.1"
+  }
+}
