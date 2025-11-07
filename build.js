@@ -12,13 +12,13 @@ const minified = await minify(sourceCode, {
 });
 
 const bookmarkletCode = `<a href="javascript:${encodeURIComponent(minified.code)}">Bookmarklet</a>`;
-const readmeMD = `# Shopware Admin Product JSON Inspect Bookmarklet
+const readmeMD = `# Shopware Admin Product JSON Inspector Bookmarklet
 
-This bookmarklet allows you to inspect the JSON data of a Shopware Admin product detail page.
+This bookmarklet allows you to inspect the JSON data of a Shopware Product on a Shopware Admin product detail page.
 
 ## Usage
 
-1. Copy the code into the a new Bookmark's URL field:
+1. Copy the code into a new Bookmark's URL field:
 
 \`\`\`text
 javascript:${encodeURIComponent(minified.code)}
