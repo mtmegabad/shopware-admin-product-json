@@ -1,5 +1,6 @@
 import {minify} from 'terser';
 import { readFileSync, writeFileSync } from 'fs';
+import { text } from 'stream/consumers';
 
 const sourceCode = readFileSync('source.js', 'utf-8');
 
@@ -17,9 +18,11 @@ This bookmarklet allows you to inspect the JSON data of a Shopware Admin product
 
 ## Usage
 
-1. Drag the link below to your bookmarks bar:
+1. Copy the code into the a new Bookmark's URL field:
 
-${bookmarkletCode}
+\`\`\`text
+javascript:${encodeURIComponent(minified.code)}
+\`\`\`
 
 2. Navigate to a Shopware Admin product detail page.
 3. Click the bookmarklet to inspect the product JSON data in your browser's console.
